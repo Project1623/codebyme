@@ -327,7 +327,7 @@ section { padding: 7rem 4rem; position: relative; z-index: 1; }
 .project-placeholder { border:2px dashed var(--border); background:transparent; display:flex; align-items:center; justify-content:center; min-height:320px; flex-direction:column; gap:0.75rem; border-radius:12px; color:var(--muted); transition:border-color 0.3s; }
 .project-placeholder:hover { border-color:rgba(0,229,255,0.2); }
 .placeholder-icon { font-size:2.5rem; opacity:0.4; }
-.placeholder-text { font-family:var(--mono); font-size:0.8rem; letter-spacing:0.1em; opacity:0.5; }
+.placeholder-text { font-family:var(--mono); font-size:0.8rem; letter-spacing:1em; opacity:0.5; }
 
 /* ── TESTIMONIALS ── */
 #testimonials { background: var(--bg); }
@@ -400,23 +400,19 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
 </head>
 <body>
 
-<!-- LOADER -->
 <div id="loader">
   <div class="loader-logo">code.by.mykhailo</div>
   <div class="loader-bar-bg"><div class="loader-bar-fill"></div></div>
   <div class="loader-text" id="loader-text">Завантаження...</div>
 </div>
 
-<!-- CUSTOM CURSOR -->
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 
-<!-- SCROLL PROGRESS -->
 <div id="scroll-progress"></div>
 
 <canvas id="particles-canvas"></canvas>
 
-<!-- NAV -->
 <nav id="main-nav">
   <a href="#hero" class="nav-logo">
     <div class="nav-logo-dot"></div>
@@ -437,7 +433,6 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   </div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-bg-text">DEV</div>
   <div class="hero-content">
@@ -477,7 +472,6 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   <div class="hero-scroll"><div class="scroll-line"></div>scroll</div>
 </section>
 
-<!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
     <div class="marquee-item">HTML <span class="mdot">●</span></div>
@@ -505,7 +499,6 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   </div>
 </div>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="section-header reveal">
     <span class="section-num">01.</span>
@@ -515,7 +508,7 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   <div class="about-grid">
     <div>
       <div class="about-text reveal">
-        <p>Я <strong>Frontend розробник</strong> із Закарпаття, який перетворює ідеї на продукти, якими приємно користуватись. Вірю, що хороший сайт — це не просто гарна картинка, а досвід, який залишається в пам'яті.</p>
+        <p>Я <strong>Frontend розробник</strong> із Закарпаття, який перетворює ідеї на продукты, якими приємно користуватись. Вірю, що хороший сайт — це не просто гарна картинка, а досвід, який залишається в пам'яті.</p>
         <p>Мені подобається братися за задачі від нуля: <strong>розуміти потреби бізнесу</strong>, проєктувати архітектуру й доводити все до фінального пікселя. Відкритий до фриланс проєктів та цікавих колаборацій.</p>
       </div>
       <div class="skills-title reveal">Технічний стек</div>
@@ -564,7 +557,6 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   </div>
 </section>
 
-<!-- PROCESS -->
 <section id="process">
   <div class="section-header reveal">
     <span class="section-num">02.</span>
@@ -593,7 +585,6 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="section-header reveal">
     <span class="section-num">03.</span>
@@ -624,6 +615,31 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
         </div>
       </div>
     </div>
+    
+    <div class="project-card reveal">
+      <div class="project-preview-wrap">
+        <div class="project-iframe-wrap">
+          <iframe src="https://project1623.github.io/hotel-demo/" title="П'яте Колесо" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+        </div>
+        <div class="project-overlay">
+          <a href="https://project1623.github.io/hotel-demo/" target="_blank" rel="noopener" class="overlay-btn">↗ Відкрити сайт</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Animations</span>
+        </div>
+        <div class="project-name">🏨 П'яте Колесо — Готель</div>
+        <p class="project-desc">Сучасний інтерфейс для готельно-туристичного комплексу. Інтерактивні галереї кімнат, детальні вкладки номерів та зручна форма бронювання.</p>
+        <div class="project-links">
+          <a href="https://project1623.github.io/hotel-demo/" target="_blank" rel="noopener" class="project-link">↗ Live Demo</a>
+        </div>
+      </div>
+    </div>
+
     <div class="project-placeholder reveal reveal-delay-1">
       <div class="placeholder-icon">⚡</div>
       <div class="placeholder-text">Наступний проєкт — скоро</div>
@@ -631,7 +647,6 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section id="testimonials">
   <div class="section-header reveal">
     <span class="section-num">04.</span>
@@ -659,7 +674,6 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="section-header reveal">
     <span class="section-num">05.</span>
@@ -686,6 +700,11 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
           <div class="contact-info"><div class="contact-info-label">Instagram</div><div class="contact-info-val">@code.by.mykhailo</div></div>
           <span class="contact-arrow">→</span>
         </a>
+        <a href="https://github.com/project1623" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">🐙</span>
+          <div class="contact-info"><div class="contact-info-label">GitHub</div><div class="contact-info-val">github.com/project1623</div></div>
+          <span class="contact-arrow">→</span>
+        </a>
       </div>
     </div>
     <div class="contact-cta-card reveal">
@@ -697,7 +716,6 @@ footer { padding:2rem 4rem; border-top:1px solid var(--border); display:flex; ju
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <span class="footer-logo">code.by.mykhailo</span>
   <span>Розроблено з ♥ в Закарпатті · <span id="year"></span></span>
